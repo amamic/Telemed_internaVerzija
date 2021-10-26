@@ -22,6 +22,7 @@ public class PatientControlled {
     @PostConstruct
     public void init1() {
         patientMemoryManager.getpatientList().add(new Patient("Pero", "Perić", "pero.peric@gmail.com", "22.10.1984"));
+        patientMemoryManager.getpatientList().add(new Patient("Ivo", "Ivić", "ivi.ivic@gmail.com", "13.02.1978"));
     }
 
     @GetMapping("/telemedapp/add_patient")
